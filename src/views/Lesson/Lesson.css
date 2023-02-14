@@ -1,0 +1,15 @@
+td {
+    padding: 20px;
+  }
+  
+  .left-column {
+    width: 25%;
+    background-color: lightblue;
+  }
+  
+  .right-column {
+    width: 75%;
+    background-color: lightgray;
+    vertical-align: top;
+  }
+  

@@ -1,25 +1,36 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Lesson } from '../../models/Models';
 import './LeftMenu.css';
 
-function LeftMenu() {
-	const [menuOpen, setMenuOpen] = useState(false);
+interface LeftMenuProps {
+	menuItems: Lesson[],
+	course: string
+}
+function LeftMenu(props: LeftMenuProps) {
+	const { menuItems, course } = props;
+	const [activeItem, setActiveItem] = useState(null);
+	const navigate = useNavigate();
 
-	function toggleMenu() {
-		setMenuOpen(!menuOpen);
-	}
+	console.log('length ', menuItems.length)
 
 	return (
-		<div className="left-menu">
-			<button className="menu-toggle" onClick={toggleMenu}>
-				{menuOpen ? 'Close menu' : 'Open menu'}
-			</button>
-			<div className={`menu-items ${menuOpen ? 'open' : ''}`}>
-				<ul>
-					<li><a href="#">Menu item 1</a></li>
-					<li><a href="#">Menu item 2</a></li>
-					<li><a href="#">Menu item 3</a></li>
-				</ul>
-			</div>
+		<div className="menu">
+			{!!menuItems?.length && menuItems.map((topic) => (
+				<div key={topic.title}>
+					<div className="heading" onClick={() => navigate(`/${course}/${topic.fileName}`)}>{topic.title}</div>
+					{!!topic?.subTitles?.length && topic.subTitles.map((subTopic: any) => (
+						<div
+							key={subTopic.fileName}
+							className={`subheading ${activeItem === subTopic ? "active" : ""
+								}`}
+							onClick={() => navigate(`/${course}/${subTopic.fileName}`)}
+						>
+							{subTopic.displayName}
+						</div>
+					))}
+				</div>
+			))}
 		</div>
 	);
 }

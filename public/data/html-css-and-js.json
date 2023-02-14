@@ -1,0 +1,92 @@
+[
+    {
+        "title": "HTML",
+        "fileName": "introduction-to-html",
+        "subTitles": [
+            {
+                "displayName": "Introduction to HTML and its history",
+                "fileName": "intro-to-html-and-its-history"
+            },
+            {
+                "displayName": "Basic HTML structure and syntax",
+                "fileName": "basic-html-structure-and-syntax"
+            },
+            {
+                "displayName": "HTML elements such as headings, paragraphs, lists, links, images, tables, and forms",
+                "fileName": "html-elements"
+            },
+            {
+                "displayName": "HTML semantic elements and their use in creating accessible websites",
+                "fileName": "html-semantic-elements"
+            },
+            {
+                "displayName": "HTML5 features such as video and audio elements, local storage, and web workers",
+                "fileName": "html5-features"
+            }
+        ]
+    },
+    {
+        "title": "CSS",
+        "fileName": "introduction-to-css",
+        "subTitles": [
+            {
+                "displayName": "Introduction to CSS and its history",
+                "fileName": "intro-to-css-and-its-history"
+            },
+            {
+                "displayName": "Understanding the CSS box model and how it affects layout",
+                "fileName": "css-box-model"
+            },
+            {
+                "displayName": "CSS selectors and cascading order",
+                "fileName": "css-selectors-and-cascading-order"
+            },
+            {
+                "displayName": "CSS properties such as color, font, text, and box properties",
+                "fileName": "css-properties"
+            },
+            {
+                "displayName": "CSS layout techniques including floats, flexbox, and grid",
+                "fileName": "css-layout-techniques"
+            },
+            {
+                "displayName": "CSS preprocessors such as Sass and Less",
+                "fileName": "css-preprocessors"
+            }
+        ]
+    },
+    {
+        "title": "JavaScript",
+        "fileName": "introduction-to-js",
+        "subTitles": [
+            {
+                "displayName": "Introduction to JavaScript and its history",
+                "fileName": "intro-to-javascript-and-its-history"
+            },
+            {
+                "displayName": "Variables, data types, and operators in JavaScript",
+                "fileName": "javascript-variables-data-types-operators"
+            },
+            {
+                "displayName": "Conditional statements and loops",
+                "fileName": "javascript-conditional-statements-and-loops"
+            },
+            {
+                "displayName": "Functions in JavaScript",
+                "fileName": "javascript-functions"
+            },
+            {
+                "displayName": "Arrays and objects in JavaScript",
+                "fileName": "javascript-arrays-and-objects"
+            },
+            {
+                "displayName": "DOM manipulation and event handling",
+                "fileName": "dom-manipulation-and-event-handling"
+            },
+            {
+                "displayName": "JavaScript frameworks such as React, Angular, and Vue.js",
+                "fileName": "javascript-frameworks"
+            }
+        ]
+    }
+]

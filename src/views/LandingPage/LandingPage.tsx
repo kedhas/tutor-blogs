@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import './LandingPage.css';
-import courses from './courses.json'
+import lessons from '../../data/lessons.json'
 
 
 interface LandingPropsProps {
@@ -17,16 +17,15 @@ interface LandingCardData {
 
 function LandingProps() {
 	const navigate = useNavigate();
-
 	return (
 		<div className="card-grid">
-			{courses.map(course => (
-				<div className="card" key={course.route} onClick={() => {
-					navigate(`/${course.route}`)
+			{lessons.map(lesson => (
+				<div className="card" key={lesson.route} onClick={() => {
+					navigate(`/${lesson.route}`)
 				}}>
-					<img src={course.image} alt={course.title} />
-					<h2>{course.title}</h2>
-					<p>{course.description}</p>
+					<img src={lesson.image} alt={lesson.title} />
+					<h2>{lesson.title}</h2>
+					<p>{lesson.description}</p>
 				</div>))}
 		</div>
 	);
