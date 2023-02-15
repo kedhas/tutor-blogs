@@ -18,11 +18,13 @@ function LeftMenu(props: LeftMenuProps) {
 		<div className="menu">
 			{!!menuItems?.length && menuItems.map((topic) => (
 				<div key={topic.title}>
-					<div className="heading" onClick={() => navigate(`/${course}/${topic.fileName}`)}>{topic.title}</div>
+					{topic.fileName ? <div className="heading1-link" onClick={() => navigate(`/${course}/${topic.fileName}`)}>{topic.title}</div>
+						: <div className="heading1-nolink">{topic.title}</div>}
+
 					{!!topic?.subTitles?.length && topic.subTitles.map((subTopic: any) => (
 						<div
 							key={subTopic.fileName}
-							className={`subheading ${activeItem === subTopic ? "active" : ""
+							className={`heading2-link ${activeItem === subTopic ? "active" : ""
 								}`}
 							onClick={() => navigate(`/${course}/${subTopic.fileName}`)}
 						>

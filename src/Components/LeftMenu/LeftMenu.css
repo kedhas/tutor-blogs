@@ -1,11 +1,18 @@
-.heading {
+.heading1-link {
     font-size: 20px;
     font-weight: bold;
     color: blue;
     padding: 10px 10px;
 }
 
-.subheading {
+.heading1-nolink {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 10px;
+}
+
+.heading2-link {
     padding-left: 20px;
     font-size: 16px;
     padding: 5px 10px;

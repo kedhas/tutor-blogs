@@ -1,7 +1,6 @@
 [
     {
         "title": "HTML",
-        "fileName": "introduction-to-html",
         "subTitles": [
             {
                 "displayName": "Introduction to HTML and its history",
@@ -27,7 +26,6 @@
     },
     {
         "title": "CSS",
-        "fileName": "introduction-to-css",
         "subTitles": [
             {
                 "displayName": "Introduction to CSS and its history",
@@ -57,7 +55,6 @@
     },
     {
         "title": "JavaScript",
-        "fileName": "introduction-to-js",
         "subTitles": [
             {
                 "displayName": "Introduction to JavaScript and its history",
