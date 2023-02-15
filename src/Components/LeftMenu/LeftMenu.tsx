@@ -9,7 +9,7 @@ interface LeftMenuProps {
 }
 function LeftMenu(props: LeftMenuProps) {
 	const { menuItems, course } = props;
-	const [activeItem, setActiveItem] = useState(null);
+	const [activeItem, setActiveItem] = useState<any>(null);
 	const navigate = useNavigate();
 
 	console.log('length ', menuItems.length)
@@ -18,7 +18,10 @@ function LeftMenu(props: LeftMenuProps) {
 		<div className="menu">
 			{!!menuItems?.length && menuItems.map((topic) => (
 				<div key={topic.title}>
-					{topic.fileName ? <div className="heading1-link" onClick={() => navigate(`/${course}/${topic.fileName}`)}>{topic.title}</div>
+					{topic.fileName ? <div className="heading1-link" onClick={() => {
+						setActiveItem(topic);
+						navigate(`/${course}/${topic.fileName}`)
+					}}>{topic.title}</div>
 						: <div className="heading1-nolink">{topic.title}</div>}
 
 					{!!topic?.subTitles?.length && topic.subTitles.map((subTopic: any) => (
@@ -26,7 +29,10 @@ function LeftMenu(props: LeftMenuProps) {
 							key={subTopic.fileName}
 							className={`heading2-link ${activeItem === subTopic ? "active" : ""
 								}`}
-							onClick={() => navigate(`/${course}/${subTopic.fileName}`)}
+							onClick={() => {
+								setActiveItem(subTopic);
+								navigate(`/${course}/${subTopic.fileName}`)
+							}}
 						>
 							{subTopic.displayName}
 						</div>
