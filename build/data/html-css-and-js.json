@@ -1,0 +1,89 @@
+[
+    {
+        "title": "HTML",
+        "subTitles": [
+            {
+                "displayName": "Introduction to HTML and its history",
+                "fileName": "intro-to-html-and-its-history"
+            },
+            {
+                "displayName": "Basic HTML structure and syntax",
+                "fileName": "basic-html-structure-and-syntax"
+            },
+            {
+                "displayName": "HTML elements",
+                "fileName": "html-elements"
+            },
+            {
+                "displayName": "HTML semantic elements and their use",
+                "fileName": "html-semantic-elements"
+            },
+            {
+                "displayName": "HTML5 features",
+                "fileName": "html5-features"
+            }
+        ]
+    },
+    {
+        "title": "CSS",
+        "subTitles": [
+            {
+                "displayName": "Introduction to CSS and its history",
+                "fileName": "intro-to-css-and-its-history"
+            },
+            {
+                "displayName": "Understanding the CSS box model and how it affects layout",
+                "fileName": "css-box-model"
+            },
+            {
+                "displayName": "CSS selectors and cascading order",
+                "fileName": "css-selectors-and-cascading-order"
+            },
+            {
+                "displayName": "CSS properties",
+                "fileName": "css-properties"
+            },
+            {
+                "displayName": "CSS layout techniques",
+                "fileName": "css-layout-techniques"
+            },
+            {
+                "displayName": "CSS preprocessors",
+                "fileName": "css-preprocessors"
+            }
+        ]
+    },
+    {
+        "title": "JavaScript",
+        "subTitles": [
+            {
+                "displayName": "Introduction to JavaScript and its history",
+                "fileName": "intro-to-javascript-and-its-history"
+            },
+            {
+                "displayName": "Variables, data types, and operators in JavaScript",
+                "fileName": "javascript-variables-data-types-operators"
+            },
+            {
+                "displayName": "Conditional statements and loops",
+                "fileName": "javascript-conditional-statements-and-loops"
+            },
+            {
+                "displayName": "Functions in JavaScript",
+                "fileName": "javascript-functions"
+            },
+            {
+                "displayName": "Arrays and objects in JavaScript",
+                "fileName": "javascript-arrays-and-objects"
+            },
+            {
+                "displayName": "DOM manipulation and event handling",
+                "fileName": "dom-manipulation-and-event-handling"
+            },
+            {
+                "displayName": "JavaScript frameworks such as React, Angular, and Vue.js",
+                "fileName": "javascript-frameworks"
+            }
+        ]
+    }
+]

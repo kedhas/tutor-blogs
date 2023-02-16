@@ -1,0 +1,20 @@
+[
+    {
+        "title": "HTML CSS and JavaScript",
+        "description": "Test Desctiption",
+        "image": "Test Image",
+        "route": "html-css-and-js"
+    },
+    {
+        "title": "Angular",
+        "description": "Test Desctiption",
+        "image": "Test Image",
+        "route": "angular"
+    },
+    {
+        "title": "ReactJs",
+        "description": "Test Desctiption",
+        "image": "Test Image",
+        "route": "reactjs"
+    }
+]
