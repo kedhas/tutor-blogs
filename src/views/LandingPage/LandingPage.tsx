@@ -4,17 +4,6 @@ import './LandingPage.css';
 import lessons from '../../data/lessons.json'
 
 
-interface LandingPropsProps {
-	data: LandingCardData[];
-}
-
-interface LandingCardData {
-	title: string;
-	description: string;
-	image: string;
-	route: string
-}
-
 function LandingProps() {
 	const navigate = useNavigate();
 	return (
