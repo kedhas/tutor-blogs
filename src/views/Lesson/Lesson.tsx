@@ -27,36 +27,16 @@ function Lesson() {
 
   return (
     <>
-    <table>
-  <tr>
-    <td className="left-column">
-          <LeftMenu menuItems={data as any[]} course={heading || ''} />
-    </td>
-    <td className="right-column">
-          <DynamicHTML course={heading || ''} topic={subHeading || 'index'} />
-    </td>
-  </tr>
-</table>
-      {/* <div className="container">
-        <div className="left-column" >
+      <div className="body-content">
+        <div className="left">
           <LeftMenu menuItems={data as any[]} course={heading || ''} />
         </div>
-        <div className="right-column" >
+        <div className="right">
           <DynamicHTML course={heading || ''} topic={subHeading || 'index'} />
         </div>
-      </div> */}
-      {/* <Container>
-        <Row>
-          <Col md={9} lg={9}>
-            <DynamicHTML course={heading || ''} topic={subHeading || 'index'} />
-          </Col>
-          <Col md={3} lg={9}>
-            <LeftMenu menuItems={data as any[]} course={heading || ''} />
-          </Col>
-        </Row>
-      </Container> */}
+      </div>
     </>
   );
-};
+}
 
-export default Lesson;
+export default Lesson

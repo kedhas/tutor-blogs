@@ -1,0 +1,48 @@
+<div>
+    <h1>CSS Selectors and Cascading Order</h1>
+    <p>CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a document written in
+        HTML (Hypertext Markup Language). It enables web developers to separate the presentation of a document from its
+        content. One of the fundamental concepts of CSS is the use of selectors to target HTML elements and apply
+        styling rules to them.</p>
+
+    <h2>Selectors</h2>
+    <p>There are several types of selectors in CSS. The most basic type is the element selector, which targets elements
+        based on their tag name. For example, to target all <code>&lt;p&gt;</code> elements, you can use the following
+        selector:</p>
+
+    <pre><code>p {
+        /* CSS styling rules go here */
+    }</code></pre>
+
+    <p>You can also target elements based on their class or ID attributes. Class selectors use a period (<code>.</code>)
+        followed by the class name, while ID selectors use a hash symbol (<code>#</code>) followed by the ID name. For
+        example:</p>
+
+    <pre><code>.my-class {
+        /* CSS styling rules go here */
+    }
+    
+    #my-id {
+        /* CSS styling rules go here */
+    }</code></pre>
+
+    <h2>Cascading Order</h2>
+    <p>The term "cascading" in CSS refers to the process of determining which styles should be applied to an element
+        when there are conflicting styles. There are several factors that determine the cascading order:</p>
+
+    <ul>
+        <li><strong>Specificity:</strong> This refers to the level of specificity of a selector. For example, an ID
+            selector is more specific than a class selector, which is more specific than an element selector. If two
+            selectors have the same specificity, the one that appears last in the stylesheet takes precedence.</li>
+        <li><strong>Inheritance:</strong> Some properties are inherited by child elements from their parent elements. If
+            a property is not explicitly set on a child element, it inherits the value from its parent element. However,
+            if the property is set on the child element, it takes precedence over the inherited value.</li>
+        <li><strong>Importance:</strong> Styles can be marked as important using the <code>!important</code> keyword.
+            This gives them the highest precedence and overrides all other styles, even those with higher specificity or
+            that are inherited.</li>
+    </ul>
+
+    <p>Understanding CSS selectors and the cascading order is crucial for creating well-designed and maintainable
+        stylesheets. By using specific and targeted selectors, you can avoid conflicts and ensure that your styles are
+        applied correctly.</p>
+</div>

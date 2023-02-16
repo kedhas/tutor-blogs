@@ -11,15 +11,15 @@
                 "fileName": "basic-html-structure-and-syntax"
             },
             {
-                "displayName": "HTML elements such as headings, paragraphs, lists, links, images, tables, and forms",
+                "displayName": "HTML elements",
                 "fileName": "html-elements"
             },
             {
-                "displayName": "HTML semantic elements and their use in creating accessible websites",
+                "displayName": "HTML semantic elements and their use",
                 "fileName": "html-semantic-elements"
             },
             {
-                "displayName": "HTML5 features such as video and audio elements, local storage, and web workers",
+                "displayName": "HTML5 features",
                 "fileName": "html5-features"
             }
         ]
@@ -40,15 +40,15 @@
                 "fileName": "css-selectors-and-cascading-order"
             },
             {
-                "displayName": "CSS properties such as color, font, text, and box properties",
+                "displayName": "CSS properties",
                 "fileName": "css-properties"
             },
             {
-                "displayName": "CSS layout techniques including floats, flexbox, and grid",
+                "displayName": "CSS layout techniques",
                 "fileName": "css-layout-techniques"
             },
             {
-                "displayName": "CSS preprocessors such as Sass and Less",
+                "displayName": "CSS preprocessors",
                 "fileName": "css-preprocessors"
             }
         ]

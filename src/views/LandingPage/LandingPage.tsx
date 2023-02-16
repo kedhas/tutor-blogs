@@ -1,5 +1,5 @@
-import React, { Component, useEffect, useState } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './LandingPage.css';
 import lessons from '../../data/lessons.json'
 
