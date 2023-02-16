@@ -15,7 +15,7 @@ function Lesson() {
       try {
         const response = await fetch(`/data/${heading}.json`);
         const courseJson = await response.json();
-        // console.log('courseJson ', courseJson)
+        console.log('courseJson ', courseJson)
         setData(courseJson);
       } catch (error) {
         console.error(error);
