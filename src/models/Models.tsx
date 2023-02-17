@@ -8,3 +8,13 @@ export interface Lesson {
     }[];
 }
 
+export interface Topic {
+    title: string,
+    subTitles: SubTopic[],
+    fileName: string
+}
+
+export interface SubTopic {
+    displayName: string,
+    fileName: string
+}

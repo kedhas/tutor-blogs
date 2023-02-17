@@ -1,48 +1,51 @@
-<h2>Creating Components in Angular</h2>
+<div>
+    <h2>Creating Components in Angular</h2>
 
-<p>In Angular, a component is a building block for creating web applications. It consists of a template, which defines
-    the structure and layout of the component, and a TypeScript class, which provides the component's behavior and
-    logic.</p>
+    <p>In Angular, a component is a building block for creating web applications. It consists of a template, which
+        defines
+        the structure and layout of the component, and a TypeScript class, which provides the component's behavior and
+        logic.</p>
 
-<h3>Creating a New Component</h3>
+    <h3>Creating a New Component</h3>
 
-<p>To create a new component, you can use the Angular CLI command:</p>
+    <p>To create a new component, you can use the Angular CLI command:</p>
 
-<pre><code>ng generate component my-component</code></pre>
+    <pre><code>ng generate component my-component</code></pre>
 
-<p>This will create a new directory named <code>my-component</code> with four files:</p>
+    <p>This will create a new directory named <code>my-component</code> with four files:</p>
 
-<ul>
-    <li><code>my-component.component.ts</code> - the TypeScript class for the component</li>
-    <li><code>my-component.component.html</code> - the HTML template for the component</li>
-    <li><code>my-component.component.css</code> - the CSS stylesheet for the component</li>
-    <li><code>my-component.component.spec.ts</code> - the unit test for the component</li>
-</ul>
+    <ul>
+        <li><code>my-component.component.ts</code> - the TypeScript class for the component</li>
+        <li><code>my-component.component.html</code> - the HTML template for the component</li>
+        <li><code>my-component.component.css</code> - the CSS stylesheet for the component</li>
+        <li><code>my-component.component.spec.ts</code> - the unit test for the component</li>
+    </ul>
 
-<h3>Defining the Component's Template</h3>
+    <h3>Defining the Component's Template</h3>
 
-<p>The HTML template for a component is defined in a separate file, which makes it easier to manage and reuse. You can
-    use standard HTML tags and Angular directives to define the layout and content of the template.</p>
+    <p>The HTML template for a component is defined in a separate file, which makes it easier to manage and reuse. You
+        can
+        use standard HTML tags and Angular directives to define the layout and content of the template.</p>
 
-<p>Here's an example of a template for a simple component that displays a message:</p>
+    <p>Here's an example of a template for a simple component that displays a message:</p>
 
-<pre><code>&lt;div&gt;
+    <pre><code>&lt;div&gt;
   &lt;h1&gt;{{ title }}&lt;/h1&gt;
   &lt;p&gt;{{ message }}&lt;/p&gt;
 &lt;/div&gt;
 </code></pre>
 
-<p>In this example, we're using the double curly braces notation <code>{{ }}</code> to display the values of two
-    properties: <code>title</code> and <code>message</code>.</p>
+    <p>In this example, we're using the double curly braces notation <code>{{ }}</code> to display the values of two
+        properties: <code>title</code> and <code>message</code>.</p>
 
-<h3>Defining the Component's Class</h3>
+    <h3>Defining the Component's Class</h3>
 
-<p>The TypeScript class for a component provides the component's behavior and logic. It defines the properties and
-    methods that are used by the template.</p>
+    <p>The TypeScript class for a component provides the component's behavior and logic. It defines the properties and
+        methods that are used by the template.</p>
 
-<p>Here's an example of a TypeScript class for the simple component we defined earlier:</p>
+    <p>Here's an example of a TypeScript class for the simple component we defined earlier:</p>
 
-<pre><code>import { Component } from '@angular/core';
+    <pre><code>import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-my-component',
@@ -55,25 +58,29 @@ export class MyComponentComponent {
 }
 </code></pre>
 
-<p>In this example, we're using the <code>@Component</code> decorator to define the selector, template, and stylesheet
-    for the component. We're also defining two properties, <code>title</code> and <code>message</code>, which are used
-    in the template.</p>
+    <p>In this example, we're using the <code>@Component</code> decorator to define the selector, template, and
+        stylesheet
+        for the component. We're also defining two properties, <code>title</code> and <code>message</code>, which are
+        used
+        in the template.</p>
 
-<h3>Using the Component in a Template</h3>
+    <h3>Using the Component in a Template</h3>
 
-<p>Once you've defined a component, you can use it in other templates by adding the component's selector as a custom
-    HTML tag. Here's an example of using our <code>MyComponent</code> component in another template:</p>
+    <p>Once you've defined a component, you can use it in other templates by adding the component's selector as a custom
+        HTML tag. Here's an example of using our <code>MyComponent</code> component in another template:</p>
 
-<pre><code>&lt;app-my-component&gt;&lt;/app-my-component&gt;
+    <pre><code>&lt;app-my-component&gt;&lt;/app-my-component&gt;
 </code></pre>
 
-<p>This will render the template defined in <code>my-component.component.html</code> and use the properties and methods
-    defined in <code>MyComponentComponent</code>.</p>
+    <p>This will render the template defined in <code>my-component.component.html</code> and use the properties and
+        methods
+        defined in <code>MyComponentComponent</code>.</p>
 
-<h3>Conclusion</h3>
+    <h3>Conclusion</h3>
 
-<p>Creating components is a fundamental part of building web applications with Angular. By separating the template and
-    class into separate files, you can create reusable and maintainable components that
-    can be easily composed
-    into larger applications.</p>
+    <p>Creating components is a fundamental part of building web applications with Angular. By separating the template
+        and
+        class into separate files, you can create reusable and maintainable components that
+        can be easily composed
+        into larger applications.</p>
 </div>

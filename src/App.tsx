@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header/Header';
 import LandingPage from './views/LandingPage/LandingPage';
-import Lesson from './views/Lesson';
+import Lesson from './views/LessonView';
 
 function App() {
   return (

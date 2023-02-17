@@ -1,0 +1,41 @@
+<div>
+    <h2>Directives</h2>
+    <p>Directives are a way to extend the HTML syntax with custom behaviors. They are markers on a DOM element that tell
+        Angular to do something with that element. There are three types of directives in Angular: component directives,
+        attribute directives, and structural directives.</p>
+    <h3>Component Directives</h3>
+    <p>Component directives are the most common type of directive. They are used to create reusable UI components that
+        can be used throughout an application. Components are essentially a group of HTML elements, styles, and behavior
+        that can be used to build a specific part of a UI.</p>
+    <h3>Attribute Directives</h3>
+    <p>Attribute directives are used to change the behavior or appearance of an element. They can be used to add or
+        remove CSS classes, change the style of an element, or add behavior to an element. Attribute directives are used
+        by adding an attribute to an element, followed by the directive name.</p>
+    <h3>Structural Directives</h3>
+    <p>Structural directives are used to add or remove elements from the DOM based on a condition. They can be used to
+        create loops or conditionals in the template. Structural directives are used by adding an asterisk (*) to the
+        directive name.</p>
+    <h2>Pipes</h2>
+    <p>Pipes are a way to transform data in an Angular template. They take data as input and transform it into a desired
+        output. There are many built-in pipes in Angular, and developers can also create their own custom pipes.</p>
+    <h3>Built-in Pipes</h3>
+    <p>Angular provides a set of built-in pipes that can be used to transform data in the template. Some examples of
+        built-in pipes include the *uppercase* pipe, which transforms text to all uppercase, and the *date* pipe, which
+        formats dates.</p>
+    <h3>Custom Pipes</h3>
+    <p>Developers can also create their own custom pipes to transform data in a specific way. Custom pipes can be
+        created using the *@Pipe* decorator, which tells Angular that the class is a pipe. Custom pipes can be used in
+        the template just like built-in pipes.</p>
+    <h2>Example</h2>
+    <p>Here's an example of using a directive and a pipe in an Angular template. In this example, we have a list of
+        items that we want to display in a dropdown. We also want to show the current date and time in the template.</p>
+    <pre><code>&lt;div&gt;
+    &lt;select appCustomDirective&gt;
+      &lt;option *ngFor="let item of items"&gt;{{ item }}&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;p&gt;The current date and time is {{ currentDate | date }}&lt;/p&gt;
+  &lt;/div&gt;
+    </code></pre>
+    <p>In this example, we're using the *ngFor* directive to loop through the *items* array and display each item as an
+        option in a select element. We're also using the *date* pipe to format the *currentDate* property as a date.</p>
+</div>
