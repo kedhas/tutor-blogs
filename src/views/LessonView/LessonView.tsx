@@ -1,11 +1,12 @@
+import { Button } from '@mui/material';
 import { useEffect, useState } from "react";
 // import { Col, Container, Row } from "react-bootstrap";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import DynamicHTML from "../../Components/DynamicHTML";
 import { SubTopic, Topic } from "../../models/Models";
-import './LessonView.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import './LessonView.css'
 
 function LessonView() {
   const { heading, subHeading } = useParams();
@@ -128,18 +129,17 @@ function LessonView() {
         </div>}
         <div className={menuExpanded ? "right-with-menu" : 'right-no-menu'}>
           <DynamicHTML course={heading || ''} topic={subHeading || 'index'} />
-          <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
-            {!(activeSubTopicIndex === 0 && activeTopicIndex === 0) && <button style={{ border: 'none', backgroundColor: 'transparent', marginRight: '50px' }}
-              onClick={() => navigateLesson(false)}>
-              <FontAwesomeIcon icon={faArrowLeft} /> <span style={{ fontSize: '1.2rem' }}>Previous</span>
-            </button>}
-            {!(activeSubTopicIndex === activeTopic?.subTitles?.length - 1 && activeTopicIndex === data.length - 1)
-              && <button style={{ border: 'none', backgroundColor: 'transparent', marginLeft: '50px' }}
-                onClick={() => navigateLesson(true)}>
-                <span style={{ fontSize: '1.2rem' }}>Next</span> <FontAwesomeIcon icon={faArrowRight} />
-              </button>}
-          </div>
         </div>
+      </div>
+      <div className="bottom-nav-container">
+        <Button onClick={() => navigateLesson(false)}>
+          {!(activeSubTopicIndex === 0 && activeTopicIndex === 0) &&
+            <><FontAwesomeIcon icon={faArrowLeft} /><span>&nbsp;&nbsp;Previous</span></>}
+        </Button>
+        <Button onClick={() => navigateLesson(true)} className="right-nav-button">
+          {!(activeSubTopicIndex === activeTopic?.subTitles?.length - 1 && activeTopicIndex === data.length - 1)
+            && <><span>Next&nbsp;&nbsp;</span> <FontAwesomeIcon icon={faArrowRight} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</>}
+        </Button>
       </div>
     </>
   );

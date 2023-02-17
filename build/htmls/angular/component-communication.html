@@ -1,0 +1,62 @@
+<div>
+    <h2>Component Communication in Angular</h2>
+
+    <p>In Angular, components are the building blocks of the user interface. They can be nested inside each other to
+        create
+        complex UIs. As such, components often need to communicate with one another to share data or coordinate actions.
+        There are several ways that components can communicate with each other in Angular:</p>
+
+    <ul>
+        <li>Input and Output bindings</li>
+        <li>ViewChild and ViewChildren</li>
+        <li>Services</li>
+        <li>Event bus</li>
+    </ul>
+
+    <p>Let's take a closer look at input and output bindings with an example. Suppose we have a parent component that
+        displays a list of items, and a child component that displays the details of a selected item. We want to be able
+        to
+        click on an item in the list and display its details in the child component. Here's how we could set that up:
+    </p>
+
+    <pre>
+<code>&lt;app-item-list [items]="items" (itemSelected)="onItemSelected($event)"&gt;&lt;/app-item-list&gt;
+&lt;app-item-details [item]="selectedItem"&gt;&lt;/app-item-details&gt;
+
+items = ['Item 1', 'Item 2', 'Item 3'];
+selectedItem: string;
+
+onItemSelected(item: string) {
+  this.selectedItem = item;
+}
+
+// item-list.component.html
+&lt;ul&gt;
+  &lt;li *ngFor="let item of items" (click)="onItemClick(item)"&gt;{{ item }}&lt;/li&gt;
+&lt;/ul&gt;
+
+// item-list.component.ts
+@Input() items: string[];
+@Output() itemSelected = new EventEmitter&lt;string&gt;();
+
+onItemClick(item: string) {
+  this.itemSelected.emit(item);
+}
+
+// item-details.component.html
+&lt;div *ngIf="item"&gt;{{ item }}&lt;/div&gt;
+
+// item-details.component.ts
+@Input() item: string;</code>
+</pre>
+
+    <p>In this example, the parent component passes the list of items to the item-list component using an input binding.
+        The
+        item-list component emits an output binding when an item is clicked, which the parent component listens for and
+        updates the selected item. The item-details component receives the selected item using an input binding and
+        displays
+        its details.</p>
+
+    <p>This is just one example of how components can communicate with each other in Angular. By using these various
+        techniques, we can create powerful and flexible user interfaces with many moving parts.</p>
+</div>
