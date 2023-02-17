@@ -1,0 +1,61 @@
+<div class="markdown prose w-full break-words dark:prose-invert light">
+    <p>Sure, here's an example blog post explaining how to create components in Angular:</p>
+    <h2>Creating Components in Angular</h2>
+    <p>In Angular, a component is a building block for creating web applications. It consists of a template, which
+        defines the structure and layout of the component, and a TypeScript class, which provides the component's
+        behavior and logic.</p>
+    <h3>Creating a New Component</h3>
+    <p>To create a new component, you can use the Angular CLI command:</p>
+    <pre>
+        <div class="bg-black mb-4 rounded-md">
+        <div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">perl</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-perl">ng generate component <span class="hljs-keyword">my</span>-component
+    </code></div></div></pre>
+    <p>This will create a new directory named <code>my-component</code> with four files:</p>
+    <ul>
+        <li><code>my-component.component.ts</code> - the TypeScript class for the component</li>
+        <li><code>my-component.component.html</code> - the HTML template for the component</li>
+        <li><code>my-component.component.css</code> - the CSS stylesheet for the component</li>
+        <li><code>my-component.component.spec.ts</code> - the unit test for the component</li>
+    </ul>
+    <h3>Defining the Component's Template</h3>
+    <p>The HTML template for a component is defined in a separate file, which makes it easier to manage and reuse. You
+        can use standard HTML tags and Angular directives to define the layout and content of the template.</p>
+    <p>Here's an example of a template for a simple component that displays a message:</p>
+    <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">html</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{{ title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ message }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></div></div></pre>
+    <p>In this example, we're using the double curly braces notation <code>{{ }}</code> to display the values of two
+        properties: <code>title</code> and <code>message</code>.</p>
+    <h3>Defining the Component's Class</h3>
+    <p>The TypeScript class for a component provides the component's behavior and logic. It defines the properties and
+        methods that are used by the template.</p>
+    <p>Here's an example of a TypeScript class for the simple component we defined earlier:</p>
+    <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">typescript</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-typescript"><span class="hljs-keyword">import</span> { <span class="hljs-title class_">Component</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+
+<span class="hljs-meta">@Component</span>({
+  <span class="hljs-attr">selector</span>: <span class="hljs-string">'app-my-component'</span>,
+  <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">'./my-component.component.html'</span>,
+  <span class="hljs-attr">styleUrls</span>: [<span class="hljs-string">'./my-component.component.css'</span>]
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyComponentComponent</span> {
+  title = <span class="hljs-string">'My Component'</span>;
+  message = <span class="hljs-string">'Hello, world!'</span>;
+}
+</code></div></div></pre>
+    <p>In this example, we're using the <code>@Component</code> decorator to define the selector, template, and
+        stylesheet for the component. We're also defining two properties, <code>title</code> and <code>message</code>,
+        which are used in the template.</p>
+    <h3>Using the Component in a Template</h3>
+    <p>Once you've defined a component, you can use it in other templates by adding the component's selector as a custom
+        HTML tag. Here's an example of using our <code>MyComponent</code> component in another template:</p>
+    <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">html</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">app-my-component</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">app-my-component</span>&gt;</span>
+</code></div></div></pre>
+    <p>This will render the template defined in <code>my-component.component.html</code> and use the properties and
+        methods defined in <code>MyComponentComponent</code>.</p>
+    <h3>Conclusion</h3>
+    <p>Creating components is a fundamental part of building web applications with Angular. By separating the template
+        and class into separate files, you can create reusable and maintainable components that can be easily composed
+        into larger applications.</p>
+</div>

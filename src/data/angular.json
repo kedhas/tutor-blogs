@@ -1,0 +1,120 @@
+[
+    {
+        "title": "Components and Templates",
+        "subTitles": [
+            {
+                "displayName": "Creating components",
+                "fileName": "creating-components"
+            },
+            {
+                "displayName": "Templates and data binding",
+                "fileName": "templates-and-data-binding"
+            },
+            {
+                "displayName": "Directives and pipes",
+                "fileName": "directives-and-pipes"
+            },
+            {
+                "displayName": "Component communication",
+                "fileName": "component-communication"
+            }
+        ]
+    },
+    {
+        "title": "Modules and Services",
+        "subTitles": [
+            {
+                "displayName": "Modules and NgModule",
+                "fileName": "modules-and-ngmodule"
+            },
+            {
+                "displayName": "Services and dependency injection",
+                "fileName": "services-and-dependency-injection"
+            },
+            {
+                "displayName": "Http and Observables",
+                "fileName": "http-and-observables"
+            },
+            {
+                "displayName": "Routing and navigation",
+                "fileName": "routing-and-navigation"
+            }
+        ]
+    },
+    {
+        "title": "Forms and Validations",
+        "subTitles": [
+            {
+                "displayName": "Template-driven forms",
+                "fileName": "template-driven-forms"
+            },
+            {
+                "displayName": "Reactive forms",
+                "fileName": "reactive-forms"
+            },
+            {
+                "displayName": "Custom validators",
+                "fileName": "custom-validators"
+            },
+            {
+                "displayName": "Form submissions",
+                "fileName": "form-submissions"
+            }
+        ]
+    },
+    {
+        "title": "Advanced Angular Features",
+        "subTitles": [
+            {
+                "displayName": "Lazy loading",
+                "fileName": "lazy-loading"
+            },
+            {
+                "displayName": "Animations",
+                "fileName": "animations"
+            },
+            {
+                "displayName": "Internationalization",
+                "fileName": "internationalization"
+            },
+            {
+                "displayName": "Server-side rendering",
+                "fileName": "server-side-rendering"
+            }
+        ]
+    },
+    {
+        "title": "Testing Angular Applications",
+        "subTitles": [
+            {
+                "displayName": "Unit testing with Jasmine and Karma",
+                "fileName": "unit-testing-with-jasmine-and-karma"
+            },
+            {
+                "displayName": "Integration testing",
+                "fileName": "integration-testing"
+            },
+            {
+                "displayName": "End-to-end testing with Protractor",
+                "fileName": "end-to-end-testing-with-protractor"
+            }
+        ]
+    },
+    {
+        "title": "Deployment and Optimization",
+        "subTitles": [
+            {
+                "displayName": "Deployment options",
+                "fileName": "deployment-options"
+            },
+            {
+                "displayName": "Optimizing for performance",
+                "fileName": "optimizing-for-performance"
+            },
+            {
+                "displayName": "Debugging Angular applications",
+                "fileName": "debugging-angular-applications"
+            }
+        ]
+    }
+]
