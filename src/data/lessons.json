@@ -1,20 +1,77 @@
 [
     {
-        "title": "HTML CSS and JavaScript",
-        "description": "Test Desctiption",
-        "image": "images/html-css-js.png",
-        "route": "html-css-js"
+        "catagory": "Front End",
+        "techs": [
+            {
+                "title": "HTML CSS and JavaScript",
+                "image": "images/html-css-js.png",
+                "route": "html-css-js"
+            },
+            {
+                "title": "Angular",
+                "image": "images/angular.svg",
+                "route": "angular"
+            },
+            {
+                "title": "ReactJs",
+                "image": "images/react.png",
+                "route": "reactjs/coming-soon"
+            }
+        ]
     },
     {
-        "title": "Angular",
-        "description": "Test Desctiption",
-        "image": "images/angular.svg",
-        "route": "angular"
+        "catagory": "Server Side",
+        "techs": [
+            {
+                "title": "Java",
+                "image": "images/java.png",
+                "route": "java/coming-soon"
+            },
+            {
+                "title": "C#",
+                "image": "images/c-sharp.png",
+                "route": "c-sharp/coming-soon"
+            },
+            {
+                "title": "NodeJs",
+                "image": "images/node-js.png",
+                "route": "node-js/coming-soon"
+            }
+        ]
     },
     {
-        "title": "ReactJs",
-        "description": "Test Desctiption",
-        "image": "images/react.png",
-        "route": "reactjs"
+        "catagory": "Database",
+        "techs": [
+            {
+                "title": "SQL",
+                "image": "images/sql.png",
+                "route": "sql/coming-soon"
+            },
+            {
+                "title": "NoSql",
+                "image": "images/no-sql.png",
+                "route": "no-sql/coming-soon"
+            }
+        ]
+    },
+    {
+        "catagory": "Mobile",
+        "techs": [
+            {
+                "title": "Android Native",
+                "image": "images/android-native.png",
+                "route": "android-native/coming-soon"
+            },
+            {
+                "title": "iOS Native",
+                "image": "images/ios-native.png",
+                "route": "ios-native/coming-soon"
+            },
+            {
+                "title": "Flutter",
+                "image": "images/flutter.png",
+                "route": "flutter/coming-soon"
+            }
+        ]
     }
 ]

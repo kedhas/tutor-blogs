@@ -1,9 +1,20 @@
 
+export interface TechStack {
+    catagory: string,
+    techs: Tech[]
+}
+
+export interface Tech {
+    title: string,
+    image: string,
+    route: string
+}
+
 export interface Lesson {
     title: string;
     fileName: string;
     subTitles: {
-        displayName: string;
+        title: string;
         fileName: string;
     }[];
 }

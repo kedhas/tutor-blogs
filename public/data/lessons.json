@@ -1,20 +1,42 @@
 [
     {
-        "title": "HTML CSS and JavaScript",
-        "description": "Test Desctiption",
-        "image": "Test Image",
-        "route": "html-css-js"
+        "catagory": "Front End",
+        "techs": [
+            {
+                "title": "HTML CSS and JavaScript",
+                "image": "images/html-css-js.png",
+                "route": "html-css-js"
+            },
+            {
+                "title": "Angular",
+                "image": "images/angular.svg",
+                "route": "angular"
+            },
+            {
+                "title": "ReactJs",
+                "image": "images/react.png",
+                "route": "reactjs"
+            }
+        ]
     },
     {
-        "title": "Angular",
-        "description": "Test Desctiption",
-        "image": "Test Image",
-        "route": "angular"
-    },
-    {
-        "title": "ReactJs",
-        "description": "Test Desctiption",
-        "image": "Test Image",
-        "route": "reactjs"
+        "catagory": "Mobile",
+        "techs": [
+            {
+                "title": "Android Native",
+                "image": "images/android-native.png",
+                "route": "android-native"
+            },
+            {
+                "title": "iOS Native",
+                "image": "images/ios-native.png",
+                "route": "ios-native"
+            },
+            {
+                "title": "Flutter",
+                "image": "images/flutter.png",
+                "route": "flutter"
+            }
+        ]
     }
 ]
