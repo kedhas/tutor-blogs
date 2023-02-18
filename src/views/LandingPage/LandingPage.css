@@ -1,4 +1,5 @@
 .card {
+    background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
@@ -25,4 +26,20 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
+}
+
+.top-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../images/top-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+}
+
+.kedhas {
+    font-size: 50px;
+    color: white;
 }
