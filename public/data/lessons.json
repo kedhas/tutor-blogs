@@ -1,6 +1,6 @@
 [
     {
-        "catagory": "Front End",
+        "catagory": "Web",
         "techs": [
             {
                 "title": "HTML CSS and JavaScript",
@@ -15,7 +15,42 @@
             {
                 "title": "ReactJs",
                 "image": "images/react.png",
-                "route": "reactjs"
+                "route": "reactjs/coming-soon"
+            }
+        ]
+    },
+    {
+        "catagory": "Server Side",
+        "techs": [
+            {
+                "title": "Java",
+                "image": "images/java.png",
+                "route": "java/coming-soon"
+            },
+            {
+                "title": "C#",
+                "image": "images/c-sharp.png",
+                "route": "c-sharp/coming-soon"
+            },
+            {
+                "title": "NodeJs",
+                "image": "images/node-js.png",
+                "route": "node-js/coming-soon"
+            }
+        ]
+    },
+    {
+        "catagory": "Database",
+        "techs": [
+            {
+                "title": "SQL",
+                "image": "images/sql.png",
+                "route": "sql/coming-soon"
+            },
+            {
+                "title": "NoSql",
+                "image": "images/no-sql.png",
+                "route": "no-sql/coming-soon"
             }
         ]
     },
@@ -23,19 +58,14 @@
         "catagory": "Mobile",
         "techs": [
             {
-                "title": "Android Native",
-                "image": "images/android-native.png",
-                "route": "android-native"
-            },
-            {
-                "title": "iOS Native",
-                "image": "images/ios-native.png",
-                "route": "ios-native"
+                "title": "React Native",
+                "image": "images/react-native.png",
+                "route": "react-native/coming-soon"
             },
             {
                 "title": "Flutter",
                 "image": "images/flutter.png",
-                "route": "flutter"
+                "route": "flutter/coming-soon"
             }
         ]
     }

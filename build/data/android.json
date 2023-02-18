@@ -1,0 +1,95 @@
+[
+    {
+        "title": "Introduction to Android development",
+        "subTitles": []
+    },
+    {
+        "title": "Setting up the development environment",
+        "subTitles": []
+    },
+    {
+        "title": "Building user interfaces",
+        "subTitles": [
+            {
+                "displayName": "Layout system",
+                "fileName": "layout-system"
+            },
+            {
+                "displayName": "Views and widgets",
+                "fileName": "views-and-widgets"
+            },
+            {
+                "displayName": "Creating a simple user interface",
+                "fileName": "creating-a-simple-user-interface"
+            }
+        ]
+    },
+    {
+        "title": "Working with data",
+        "subTitles": [
+            {
+                "displayName": "Storing and retrieving data",
+                "fileName": "storing-and-retrieving-data"
+            },
+            {
+                "displayName": "Using content providers",
+                "fileName": "using-content-providers"
+            }
+        ]
+    },
+    {
+        "title": "Interacting with the system",
+        "subTitles": [
+            {
+                "displayName": "Using sensors",
+                "fileName": "using-sensors"
+            },
+            {
+                "displayName": "Accessing hardware",
+                "fileName": "accessing-hardware"
+            },
+            {
+                "displayName": "Handling permissions",
+                "fileName": "handling-permissions"
+            }
+        ]
+    },
+    {
+        "title": "Debugging and testing",
+        "subTitles": [
+            {
+                "displayName": "Using the debugger",
+                "fileName": "using-the-debugger"
+            },
+            {
+                "displayName": "Running unit tests",
+                "fileName": "running-unit-tests"
+            },
+            {
+                "displayName": "Using Android Profiler",
+                "fileName": "using-android-profiler"
+            },
+            {
+                "displayName": "Using the Android Device Monitor",
+                "fileName": "using-the-android-device-monitor"
+            }
+        ]
+    },
+    {
+        "title": "Publishing your app",
+        "subTitles": [
+            {
+                "displayName": "Preparing your app for release",
+                "fileName": "preparing-your-app-for-release"
+            },
+            {
+                "displayName": "Creating a developer account",
+                "fileName": "creating-a-developer-account"
+            },
+            {
+                "displayName": "Submitting your app for review",
+                "fileName": "submitting-your-app-for-review"
+            }
+        ]
+    }
+]

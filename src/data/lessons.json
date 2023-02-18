@@ -1,6 +1,6 @@
 [
     {
-        "catagory": "Front End",
+        "catagory": "Web",
         "techs": [
             {
                 "title": "HTML CSS and JavaScript",
@@ -58,14 +58,9 @@
         "catagory": "Mobile",
         "techs": [
             {
-                "title": "Android Native",
-                "image": "images/android-native.png",
-                "route": "android-native/coming-soon"
-            },
-            {
-                "title": "iOS Native",
-                "image": "images/ios-native.png",
-                "route": "ios-native/coming-soon"
+                "title": "React Native",
+                "image": "images/react-native.png",
+                "route": "react-native/coming-soon"
             },
             {
                 "title": "Flutter",
