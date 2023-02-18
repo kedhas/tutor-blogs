@@ -13,10 +13,7 @@ export interface Tech {
 export interface Lesson {
     title: string;
     fileName: string;
-    subTitles: {
-        title: string;
-        fileName: string;
-    }[];
+    subTitles: Lesson[];
 }
 
 export interface Topic {

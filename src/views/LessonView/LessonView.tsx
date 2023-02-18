@@ -32,6 +32,7 @@ function LessonView() {
 
     fetchHTML();
   }, [heading]);
+
   const getHeader = () => (
     <div className="header">
       <div className="header-left">
