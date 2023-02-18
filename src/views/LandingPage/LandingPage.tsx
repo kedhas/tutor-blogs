@@ -16,9 +16,9 @@ function LandingProps() {
 					<div className="card" key={lesson.route} onClick={() => {
 						navigate(`/${lesson.route}`)
 					}}>
-						<img src={lesson.image} alt={lesson.title} />
+						<img className='lesson-card-image' src={lesson.image} alt={lesson.title} />
 						<h2>{lesson.title}</h2>
-						<p>{lesson.description}</p>
+						{/* <p>{lesson.description}</p> */}
 					</div>))}
 			</div>
 		</div>

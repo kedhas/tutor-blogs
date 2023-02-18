@@ -2,19 +2,19 @@
     {
         "title": "HTML CSS and JavaScript",
         "description": "Test Desctiption",
-        "image": "Test Image",
+        "image": "images/html-css-js.png",
         "route": "html-css-js"
     },
     {
         "title": "Angular",
         "description": "Test Desctiption",
-        "image": "Test Image",
+        "image": "images/angular.svg",
         "route": "angular"
     },
     {
         "title": "ReactJs",
         "description": "Test Desctiption",
-        "image": "Test Image",
+        "image": "images/react.png",
         "route": "reactjs"
     }
 ]
