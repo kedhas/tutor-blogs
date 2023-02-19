@@ -1,5 +1,5 @@
 
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import MuiDrawer from '@mui/material/Drawer';
@@ -82,6 +82,7 @@ function ContentComponent() {
   const [activeTopicIndex, setActiveTopicIndex] = useState<number>(0);
   const [menuExpanded, setMenuExpanded] = useState<boolean>(true);
   const navigate = useNavigate();
+  const containerRef = useRef<HTMLInputElement>(null);
 
   function preventDefault(event: React.MouseEvent) {
     event.preventDefault();
@@ -97,10 +98,7 @@ function ContentComponent() {
       } catch (error) {
         console.error(error);
       }
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+      focusOnContentTop();
     };
 
     fetchHTML();
@@ -111,8 +109,6 @@ function ContentComponent() {
   const toggleDrawer = () => {
     setOpen(!open);
   };
-
-
 
   const getLeftMenu = () => {
     const course = heading || ''
@@ -125,9 +121,9 @@ function ContentComponent() {
                 onClick={() => {
                   setActiveTopic(topic);
                   navigate(`/${course}/${topic.fileName}`)
-                }}>{topic.title}
+                }}><b><i>{topic.title}</i></b>
               </div>
-              : <div className="heading1-nolink" key={topic.title}>{topic.title}</div>}
+              : <div className="heading1-nolink" key={topic.title}><b><i>{topic.title}</i></b></div>}
             <Fragment>
               {!!topic?.subTitles?.length && topic.subTitles.map((subTopic: SubTopic, subtopIndex: number) => (
                 <ListItemButton key={subTopic.fileName + subtopIndex}
@@ -138,9 +134,13 @@ function ContentComponent() {
                     setActiveTopicIndex(topicIndex)
                     setActiveSuInbtopicIndex(subtopIndex);
                     navigate(`/${course}/${subTopic.fileName}`);
+                    focusOnContentTop();
                   }}>
                   <Link color="primary" to="#" onClick={preventDefault}>
                     {subTopic.displayName}
+                    {/* <p className="ow-break-word">
+                      {subTopic.displayName}
+                    </p> */}
                   </Link>
                 </ListItemButton>)
               )}
@@ -155,19 +155,22 @@ function ContentComponent() {
 
   const getContent = () =>
   (<>
+    <div ref={containerRef}>
+      <hr />
+    </div>
     <div className={menuExpanded ? "right-with-menu" : 'right-no-menu'}>
       <DynamicHTML course={heading || ''} topic={subHeading || 'index'} />
     </div>
     <div className="bottom-nav-container">
       <Button onClick={() => {
-        // window.scrollTo(0, 0);
+        focusOnContentTop();
         navigateLesson(false);
       }}>
         {!(activeSubTopicIndex === 0 && activeTopicIndex === 0) &&
           <><FontAwesomeIcon icon={faArrowLeft} /><span>&nbsp;&nbsp;Previous</span></>}
       </Button>
       <Button onClick={() => {
-        // window.scrollTo(0, 0);
+        focusOnContentTop();
         navigateLesson(true);
       }} className="right-nav-button">
         {!(activeSubTopicIndex === activeTopic?.subTitles?.length - 1 && activeTopicIndex === data.length - 1)
@@ -278,6 +281,11 @@ function ContentComponent() {
       </Box>
     </ThemeProvider>
   );
+
+  function focusOnContentTop() {
+    containerRef.current?.focus();
+    containerRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
 export default function ContentPage() {

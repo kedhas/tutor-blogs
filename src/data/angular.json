@@ -87,7 +87,7 @@
         "title": "Testing Angular Applications",
         "subTitles": [
             {
-                "displayName": "Unit testing with Jasmine and Karma",
+                "displayName": "Unit testing",
                 "fileName": "unit-testing-with-jasmine-and-karma"
             },
             {
@@ -95,7 +95,7 @@
                 "fileName": "integration-testing"
             },
             {
-                "displayName": "End-to-end testing with Protractor",
+                "displayName": "End-to-end testing",
                 "fileName": "end-to-end-testing-with-protractor"
             }
         ]
@@ -112,7 +112,7 @@
                 "fileName": "optimizing-for-performance"
             },
             {
-                "displayName": "Debugging Angular applications",
+                "displayName": "Debugging",
                 "fileName": "debugging-angular-applications"
             }
         ]

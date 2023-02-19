@@ -3,11 +3,11 @@
         "title": "HTML",
         "subTitles": [
             {
-                "displayName": "Introduction to HTML and its history",
+                "displayName": "Introduction",
                 "fileName": "intro-to-html-and-its-history"
             },
             {
-                "displayName": "Basic HTML structure and syntax",
+                "displayName": "Structure and syntax",
                 "fileName": "basic-html-structure-and-syntax"
             },
             {
@@ -15,7 +15,7 @@
                 "fileName": "html-elements"
             },
             {
-                "displayName": "HTML semantic elements and their use",
+                "displayName": "Semantic elements",
                 "fileName": "html-semantic-elements"
             },
             {
@@ -28,7 +28,7 @@
         "title": "CSS",
         "subTitles": [
             {
-                "displayName": "Introduction to CSS and its history",
+                "displayName": "Introduction",
                 "fileName": "intro-to-css-and-its-history"
             },
             {
@@ -36,7 +36,7 @@
                 "fileName": "css-box-model"
             },
             {
-                "displayName": "CSS selectors and cascading order",
+                "displayName": "Selectors and cascading order",
                 "fileName": "css-selectors-and-cascading-order"
             },
             {
@@ -57,11 +57,11 @@
         "title": "JavaScript",
         "subTitles": [
             {
-                "displayName": "Introduction to JavaScript and its history",
+                "displayName": "Introduction",
                 "fileName": "intro-to-javascript-and-its-history"
             },
             {
-                "displayName": "Variables, data types, and operators in JavaScript",
+                "displayName": "Variables, types, and operators",
                 "fileName": "javascript-variables-data-types-operators"
             },
             {
@@ -69,11 +69,11 @@
                 "fileName": "javascript-conditional-statements-and-loops"
             },
             {
-                "displayName": "Functions in JavaScript",
+                "displayName": "Functions",
                 "fileName": "javascript-functions"
             },
             {
-                "displayName": "Arrays and objects in JavaScript",
+                "displayName": "Arrays and objects",
                 "fileName": "javascript-arrays-and-objects"
             },
             {
@@ -81,7 +81,7 @@
                 "fileName": "dom-manipulation-and-event-handling"
             },
             {
-                "displayName": "JavaScript frameworks such as React, Angular, and Vue.js",
+                "displayName": "JavaScript frameworks",
                 "fileName": "javascript-frameworks"
             }
         ]

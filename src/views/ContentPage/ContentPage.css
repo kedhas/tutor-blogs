@@ -1,1 +1,6 @@
-/* Styles go here */
+.ow-break-word {
+    height: 30px;
+    overflow-wrap: anywhere;
+    width: 13em;
+    margin: 2px;
+}
