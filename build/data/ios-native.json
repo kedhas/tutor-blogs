@@ -1,0 +1,126 @@
+[
+    {
+        "title": "Introduction",
+        "subTitles": [
+            {
+                "displayName": "What is iOS Native",
+                "fileName": "what-is-ios-native-dev"
+            },
+            {
+                "displayName": "Why develop natively for iOS",
+                "fileName": "ios-native-dev-benefits"
+            },
+            {
+                "displayName": "Tools and softwares",
+                "fileName": "ios-dev-tools"
+            }
+        ]
+    },
+    {
+        "title": "Swift",
+        "subTitles": [
+            {
+                "displayName": "Data types",
+                "fileName": "swift-data-types"
+            },
+            {
+                "displayName": "Control flow and functions",
+                "fileName": "swift-control-flow-functions"
+            },
+            {
+                "displayName": "Object-oriented programming",
+                "fileName": "swift-oop"
+            }
+        ]
+    },
+    {
+        "title": "User interface design",
+        "subTitles": [
+            {
+                "displayName": "Ways to creating UI",
+                "fileName": "ios-ways-to-create-ui"
+            },
+            {
+                "displayName": "Views and view controllers",
+                "fileName": "ios-views-view-controllers"
+            },
+            {
+                "displayName": "Auto Layout",
+                "fileName": "ios-auto-layout"
+            }
+        ]
+    },
+    {
+        "title": "Data persistence",
+        "subTitles": [
+            {
+                "displayName": "Core Data",
+                "fileName": "ios-core-data"
+            },
+            {
+                "displayName": "SQLite",
+                "fileName": "ios-sqlite"
+            }
+        ]
+    },
+    {
+        "title": "Networking",
+        "subTitles": [
+            {
+                "displayName": "URLSession",
+                "fileName": "ios-url-session"
+            },
+            {
+                "displayName": "Alamofire",
+                "fileName": "ios-alamofire"
+            }
+        ]
+    },
+    {
+        "title": "Device hardware and sensors",
+        "subTitles": [
+            {
+                "displayName": "Accessing the camera and photo library",
+                "fileName": "ios-camera-photo-library"
+            },
+            {
+                "displayName": "Using the accelerometer and gyroscope",
+                "fileName": "ios-accelerometer-gyroscope"
+            }
+        ]
+    },
+    {
+        "title": "App deployment",
+        "subTitles": [
+            {
+                "displayName": "Testing and debugging",
+                "fileName": "ios-testing-debugging"
+            },
+            {
+                "displayName": "App Store Connect",
+                "fileName": "ios-app-store-connect"
+            },
+            {
+                "displayName": "Submitting an app to the App Store",
+                "fileName": "ios-submit-app"
+            }
+        ]
+    },
+    {
+        "title": "Best practices",
+        "subTitles": [
+            {
+                "displayName": "Clean code and maintainability",
+                "fileName": "ios-clean-code-maintainability"
+            },
+            {
+                "displayName": "Source control with Git",
+                "fileName": "ios-source-control-git"
+            },
+            {
+                "displayName": "Writing unit tests",
+                "fileName": "ios-unit-testing"
+            }
+        ]
+    }
+]

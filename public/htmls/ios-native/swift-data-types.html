@@ -1,0 +1,173 @@
+<div>
+    <h2>Data types</h2>
+    <p>Swift is a statically-typed language, which means that every variable must be declared with a specific data type.
+        Here are some of the basic data types in Swift:</p>
+    <ul>
+        <li><strong>Int:</strong> A whole number, such as 42 or -17.</li>
+        <li><strong>Double:</strong> A floating-point number with more precision than Float, such as 3.14159 or -0.0001.
+        </li>
+        <li><strong>String:</strong> A sequence of characters, such as "Hello, world!" or "42".</li>
+        <li><strong>Bool:</strong> A Boolean value that is either true or false.</li>
+    </ul>
+    <p>Here's an example of how to declare and assign values to variables in Swift:</p>
+    <pre>
+        <code>
+            // Declare a variable of type Int
+            var score: Int
+
+            // Assign a value to the variable
+            score = 42
+
+            // Declare and assign a value to a variable in one line
+            var message: String = "Hello, world!"
+        </code>
+    </pre>
+    <p>Swift also supports type inference, which means that the compiler can automatically deduce the data type based on
+        the initial value of the variable. For example:</p>
+    <pre>
+        <code>
+            // Swift infers that this variable is of type Double
+            var pi = 3.14159
+        </code>
+    </pre>
+    <p>Variables in Swift can be declared as either mutable (var) or immutable (let). Immutable variables are declared
+        with the let keyword and cannot be changed once they are assigned a value. Mutable variables are declared with
+        the var keyword and can be changed at any time.</p>
+
+    <h2>Collection objects in Swift</h2>
+    <p>Collection objects are a key part of many iOS apps, and Swift provides several different types of collections
+        that you can use, depending on your needs. Here's an overview of some of the most common collection types:
+    </p>
+    <ul>
+        <li><strong>Array:</strong> An array is an ordered collection of values of the same type. You can add,
+            remove, and access elements in an array using subscript syntax, and you can iterate over the elements of
+            an array using a for loop. Here's an example of how to create an array of strings and access its
+            elements:</li>
+        <pre>
+            <code>
+                var myArray = ["apple", "banana", "orange"]
+                print(myArray[1]) // Output: "banana"
+            </code>
+        </pre>
+        <li><strong>Set:</strong> A set is an unordered collection of unique values of the same type. You can add
+            and remove elements from a set using its methods, and you can iterate over the elements of a set using a
+            for loop. Here's an example of how to create a set of integers and access its elements:</li>
+        <pre>
+                    <code>
+                        var mySet = Set([1, 2, 3])
+                        mySet.insert(4)
+                        print(mySet.contains(3)) // Output: true
+                    </code>
+                </pre>
+        <li><strong>Dictionary:</strong> A dictionary is a collection of key-value pairs. You can add, remove, and
+            access elements in a dictionary using subscript syntax, and you can iterate over the elements of a
+            dictionary using a for loop. Here's an example of how to create a dictionary of strings and integers and
+            access its elements:
+        </li>
+        <pre>
+            <code>
+                        var myDictionary = ["Alice": 25, "Bob": 30, "Charlie": 35]
+                        print(myDictionary["Bob"]) // Output: 30
+                    </code>
+                </pre>
+        <li><strong>Tuples:</strong>In Swift, a tuple is a lightweight data structure that allows you to group multiple
+            values into a single compound value. Tuples are useful for temporary groupings of related values,
+            especially when the type of each value is different from the others.
+        </li>
+        <p>You can define a tuple by enclosing the values in parentheses and separating them with commas. Each
+            element of a tuple can have a different type. Here's an example:</p>
+        <pre>
+                        <code>
+                            let myTuple = (1, "Hello", true)
+                        </code>
+                    </pre>
+        <p>You can access the individual elements of a tuple using dot notation and the index of the element. You
+            can also name the individual elements of a tuple when you define it. Here's an example:</p>
+        <pre>
+                        <code>
+                            let myNamedTuple = (id: 1, name: "John", age: 30)
+                        </code>
+                    </pre>
+        <p>Tuples are often used to return multiple values from a function, or to pass multiple values as parameters
+            to a function. They can be used in many different contexts to group and manipulate related values.</p>
+
+    </ul>
+    <p>These are just a few examples of the many ways you can use collection objects in Swift. Understanding how to
+        use these collections and when to use them is an important part of iOS development, as many apps rely
+        heavily on collections to store and manipulate data.</p>
+
+    <li>
+        <strong>Enums and Indirect Enums</strong>In Swift, an enumeration is a way to define a group of related values.
+        Enumerations are useful when you need to work with a limited set of values, such as the days of the week, the
+        months of the year, or the states of an application.
+    </li>
+    <p>Here's an example of how to define an enum:</p>
+    <pre>
+                <code>
+                    enum CompassPoint {
+                        case north
+                        case south
+                        case east
+                        case west
+                    }
+                </code>
+            </pre>
+    <p>This defines an enumeration called "CompassPoint" with four possible values: north, south, east, and west. You
+        can use this enumeration to represent directions in your code:</p>
+    <pre>
+                <code>
+                    let direction = CompassPoint.north
+                </code>
+            </pre>
+    <p>Indirect enums are a special type of enumeration that allows you to define recursive data structures. They are
+        called "indirect" because they require the use of the "indirect" keyword before the enum definition. Here's an
+        example:</p>
+    <pre>
+                <code>
+                    indirect enum LinkedList<Element> {
+                        case empty
+                        case node(Element, LinkedList<Element>)
+                    }
+                </code>
+            </pre>
+    <p>This defines an indirect enum called "LinkedList" that can be used to represent a linked list data structure. The
+        "node" case contains an element of type "Element" and another linked list element.</p>
+    <p>Enums and indirect enums are a powerful feature of Swift that can be used in many different contexts to define
+        and work with groups of related values. They can be used to represent data structures, state machines, and more.
+    </p>
+    <li>
+        <strong>Structs:</strong>
+        In Swift, a struct is a user-defined data type that allows you to encapsulate related values and behaviors into
+        a single unit. A struct can contain properties, methods, and initializers, and it can conform to protocols to
+        provide additional functionality.
+    </li>
+    <p>Here's an example of how to define a simple struct:</p>
+    <pre>
+            <code>
+                struct Person {
+                    var name: String
+                    var age: Int
+                }
+            </code>
+        </pre>
+    <p>This defines a struct called "Person" that contains two properties: "name" and "age". You can create an
+        instance of this struct by using the initializer:</p>
+    <pre>
+            <code>
+                let john = Person(name: "John Smith", age: 30)
+            </code>
+        </pre>
+    <p>You can access the properties of a struct using dot notation:</p>
+    <pre>
+            <code>
+                print(john.name) // prints "John Smith"
+                print(john.age) // prints "30"
+            </code>
+        </pre>
+    <p>Structs are a useful tool for organizing and managing related data in your code. They can be used in many
+        different contexts, from simple data models to complex applications. Unlike classes, structs are value
+        types, which means that they are copied when they are passed around in your code. This can be an advantage
+        in some cases, as it avoids the possibility of unexpected side effects that can occur with reference types
+        like classes.</p>
+
+</div>

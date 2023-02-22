@@ -1,0 +1,100 @@
+<div>
+    <h2>Storyboard vs. programmatic UI</h2>
+    <p>When developing an iOS app, you have two main options for creating the user interface: using storyboards or
+        creating the interface programmatically. Here are some of the pros and cons of each approach:</p>
+    <ul>
+        <li><strong>Storyboards:</strong> Storyboards are visual editors that allow you to design and layout your user
+            interface using a drag-and-drop interface. They can be a great way to quickly prototype and iterate on your
+            app's design, and they provide a visual representation of your app's navigation flow. However, they can also
+            become unwieldy and hard to manage as your app's complexity grows, and they can be difficult to collaborate
+            on with other team members.</li>
+        <li><strong>Programmatic UI:</strong> Programmatic UI involves writing code to create and configure the user
+            interface. This approach can be more time-consuming than using storyboards, but it gives you more control
+            over the layout and appearance of your app. It can also be easier to manage and maintain, especially for
+            large and complex apps, and it allows for greater collaboration with other developers.</li>
+    </ul>
+    <p>Here's an example of how to create a simple user interface programmatically in Swift:</p>
+    <pre>
+        <code>
+            class MyViewController: UIViewController {
+
+                override func viewDidLoad() {
+                    super.viewDidLoad()
+
+                    let label = UILabel()
+                    label.text = "Hello, world!"
+                    label.textAlignment = .center
+                    label.font = UIFont.systemFont(ofSize: 24)
+
+                    let button = UIButton()
+                    button.setTitle("Click me", for: .normal)
+                    button.setTitleColor(.blue, for: .normal)
+
+                    let stackView = UIStackView(arrangedSubviews: [label, button])
+                    stackView.axis = .vertical
+                    stackView.spacing = 16
+
+                    view.addSubview(stackView)
+                    stackView.translatesAutoresizingMaskIntoConstraints = false
+                    NSLayoutConstraint.activate([
+                        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                        stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+                    ])
+                }
+            }
+        </code>
+    </pre>
+    <p>This code creates a simple view controller with a label and a button, and uses a stack view to arrange them
+        vertically in the center of the screen. Note that this is just one example of how to create a programmatic user
+        interface; there are many different approaches and techniques you can use, depending on the needs of your app.
+    </p>
+
+    <h2>Stacks</h2>
+    <p>In SwiftUI, <code>ZStack</code>, <code>HStack</code>, and <code>VStack</code> are container views that allow you
+        to arrange other views in a specific layout. Here's an overview of each:</p>
+    <ul>
+        <li><code>ZStack</code>: A <code>ZStack</code> arranges its child views in a stack, with each view positioned on
+            top of the one below it. You can adjust the position of each view using the <code>alignment</code>
+            parameter, which determines how the views are aligned within the stack.</li>
+        <pre>
+                <code>
+                    ZStack(alignment: .center) {
+                        Circle()
+                            .fill(Color.red)
+                            .frame(width: 100, height: 100)
+                        Text("Hello, world!")
+                            .font(.headline)
+                    }                    
+                </code>
+            </pre>
+        <li><code>HStack</code>: An <code>HStack</code> arranges its child views in a horizontal line, with each view
+            next to the one before it. You can adjust the spacing between the views using the <code>spacing</code>
+            parameter, and the alignment of the views using the <code>alignment</code> parameter.</li>
+        <pre>
+                <code>
+                    HStack(spacing: 20) {
+                        Image(systemName: "person.fill")
+                            .font(.largeTitle)
+                        Text("John Smith")
+                            .font(.headline)
+                    }                                   
+                </code>
+            </pre>
+        <li><code>VStack</code>: A <code>VStack</code> arranges its child views in a vertical line, with each view below
+            the one before it. You can adjust the spacing between the views using the <code>spacing</code> parameter,
+            and the alignment of the views using the <code>alignment</code> parameter.</li>
+        <pre>
+                <code>
+                    VStack(spacing: 10) {
+                        Text("First item")
+                        Text("Second item")
+                        Text("Third item")
+                    }                         
+                </code>
+            </pre>
+    </ul>
+    <p>By using <code>ZStack</code>, <code>HStack</code>, and <code>VStack</code>, you can create complex layouts in
+        your SwiftUI views with just a few lines of code. These views are also flexible and can adjust to changes in the
+        size of the screen or the content they contain.</p>
+
+</div>

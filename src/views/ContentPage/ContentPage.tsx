@@ -153,31 +153,19 @@ function ContentComponent() {
     );
   }
 
-  const getContent = () =>
-  (<>
-    <div ref={containerRef}>
-      <hr />
-    </div>
-    <div className={menuExpanded ? "right-with-menu" : 'right-no-menu'}>
-      <DynamicHTML course={heading || ''} topic={subHeading || 'index'} />
-    </div>
-    <div className="bottom-nav-container">
-      <Button onClick={() => {
-        focusOnContentTop();
-        navigateLesson(false);
-      }}>
-        {!(activeSubTopicIndex === 0 && activeTopicIndex === 0) &&
-          <><FontAwesomeIcon icon={faArrowLeft} /><span>&nbsp;&nbsp;Previous</span></>}
-      </Button>
-      <Button onClick={() => {
-        focusOnContentTop();
-        navigateLesson(true);
-      }} className="right-nav-button">
-        {!(activeSubTopicIndex === activeTopic?.subTitles?.length - 1 && activeTopicIndex === data.length - 1)
-          && <><span>Next&nbsp;&nbsp;</span> <FontAwesomeIcon icon={faArrowRight} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</>}
-      </Button>
-    </div>
-  </>);
+  const getContent = () => {
+    console.log(`course ${heading || ''} topic ${subHeading || 'index'}`)
+
+    return (
+      <div>
+        <div ref={containerRef}>
+          <hr />
+        </div>
+        <div >
+          <DynamicHTML course={heading || ''} topic={subHeading || 'index'} />
+        </div>
+      </div>)
+  };
 
   const navigateLesson = (next = true) => {
     const course = heading || ''
@@ -229,7 +217,7 @@ function ContentComponent() {
             >
               <MenuIcon />
             </IconButton>
-            <Button>
+            <Button style={{ marginRight: '200px' }}>
               <Typography
                 component="h1"
                 variant="h6"
@@ -238,6 +226,40 @@ function ContentComponent() {
                 sx={{ flexGrow: 1 }}
               >
                 <Link to={`/`}>Home</Link>
+              </Typography>
+            </Button>
+            <Button style={{ marginRight: '50px' }} onClick={() => {
+              focusOnContentTop();
+              navigateLesson(false);
+            }}>
+              <Typography
+                component="h1"
+                variant="h6"
+                color="black"
+                noWrap
+                sx={{ flexGrow: 1 }}
+              >
+                <Link to="#">
+                  {!(activeSubTopicIndex === 0 && activeTopicIndex === 0) &&
+                    <><FontAwesomeIcon icon={faArrowLeft} /><span>&nbsp;&nbsp;Previous</span></>}
+                </Link>
+              </Typography>
+            </Button>
+            <Button onClick={() => {
+              focusOnContentTop();
+              navigateLesson(true);
+            }}>
+              <Typography
+                component="h1"
+                variant="h6"
+                color="black"
+                noWrap
+                sx={{ flexGrow: 1 }}
+              >
+                <Link to="#">
+                  {!(activeSubTopicIndex === activeTopic?.subTitles?.length - 1 && activeTopicIndex === data.length - 1)
+                    && <><span>Next&nbsp;&nbsp;</span> <FontAwesomeIcon icon={faArrowRight} /></>}
+                </Link>
               </Typography>
             </Button>
           </Toolbar>

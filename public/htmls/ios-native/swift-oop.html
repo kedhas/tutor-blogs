@@ -1,0 +1,80 @@
+<div>
+    <h2>Object-oriented programming</h2>
+    <p>Swift is an object-oriented language, which means that it is designed to work with objects, which are instances
+        of classes. Here are some of the basic concepts of object-oriented programming in Swift:</p>
+    <ul>
+        <li><strong>Classes:</strong> Classes are blueprints for objects. They define the properties and methods that
+            objects of that class will have.</li>
+        <li><strong>Objects:</strong> Objects are instances of classes. They have their own set of values for the
+            properties defined in the class.</li>
+        <li><strong>Properties:</strong> Properties are the characteristics of an object, such as its color, size, or
+            name.</li>
+        <li><strong>Methods:</strong> Methods are the actions that an object can perform, such as moving, rotating, or
+            animating.</li>
+        <li><strong>Inheritance:</strong> Inheritance is the ability to create new classes based on existing classes.
+            This allows you to reuse code and create more specialized classes.</li>
+        <li><strong>Polymorphism:</strong> Polymorphism is the ability of an object to take on many forms. This allows
+            you to write code that works with objects of different types.</li>
+    </ul>
+    <p>Here's an example of a simple class in Swift:</p>
+    <pre>
+        <code>
+            class Shape {
+                var color: String
+                var name: String
+
+                init(color: String, name: String) {
+                    self.color = color
+                    self.name = name
+                }
+
+                func describe() {
+                    print("I am a \(color) \(name)")
+                }
+            }
+
+            // Create an object of the Shape class
+            let shape = Shape(color: "red", name: "square")
+
+            // Call the describe() method on the object
+            shape.describe()
+        </code>
+    </pre>
+    <p>Here's an example of a subclass that inherits from the Shape class:</p>
+    <pre>
+        <code>
+            class Circle: Shape {
+                var radius: Double
+
+                init(color: String, name: String, radius: Double) {
+                    self.radius = radius
+                    super.init(color: color, name: name)
+                }
+
+                override func describe() {
+                    print("I am a \(color) circle with radius \(radius)")
+                }
+            }
+
+            // Create an object of the Circle class
+            let circle = Circle(color: "blue", name: "circle", radius: 2.0)
+
+            // Call the describe() method on the object
+            circle.describe()
+        </code>
+    </pre>
+    <p>Here's an example of how to use polymorphism in Swift:</p>
+    <pre>
+        <code>
+            // Create an array of Shape objects
+            var shapes: [Shape] = []
+            shapes.append(Shape(color: "red", name: "square"))
+            shapes.append(Circle(color: "green", name: "circle", radius: 3.0))
+
+            // Call the describe() method on each object
+            for shape in shapes {
+                shape.describe()
+            }
+        </code>
+    </pre>
+</div>

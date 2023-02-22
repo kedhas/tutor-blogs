@@ -12,8 +12,15 @@ function DynamicHTML(props: DynamicHTMLProps) {
   useEffect(() => {
     const fetchHTML = async () => {
       try {
-        const response = await fetch(`/htmls/${course}/${topic}.html`);
-        const html = await response.text();
+        const path = `/htmls/${course}/${topic}.html`
+        const response = await fetch(path);
+        let html = await response.text();
+        if (html.includes('<title>Kedhas</title>')) {
+          console.log(`comming-soon`)
+          const response2 = await fetch(`/htmls/coming-soon.html`);
+          html = await response2.text();
+        }
+        console.log(`html ${html}`)
         setHTML(html);
       } catch (error) {
         console.error(error);

@@ -1,0 +1,178 @@
+[
+    {
+        "title": "Introduction",
+        "subTitles": [
+            {
+                "displayName": "What is Node.js",
+                "fileName": "what-is-node"
+            },
+            {
+                "displayName": "Features and benefits",
+                "fileName": "node-js-features-and-benefits"
+            },
+            {
+                "displayName": "Node.js vs traditional",
+                "fileName": "node-vs-traditional"
+            }
+        ]
+    },
+    {
+        "title": "Installation and Setup",
+        "subTitles": [
+            {
+                "displayName": "Installing Node.js on Windows",
+                "fileName": "installing-node-on-windows"
+            },
+            {
+                "displayName": "Installing Node.js on macOS",
+                "fileName": "installing-node-on-macos"
+            },
+            {
+                "displayName": "Installing Node.js on Linux",
+                "fileName": "installing-node-on-linux"
+            },
+            {
+                "displayName": "Setting up a text editor",
+                "fileName": "setting-up-text-editor"
+            }
+        ]
+    },
+    {
+        "title": "Node.js Modules",
+        "subTitles": [
+            {
+                "displayName": "What are modules",
+                "fileName": "what-are-node-js-modules"
+            },
+            {
+                "displayName": "Installing and using modules",
+                "fileName": "installing-and-using-node-js-modules"
+            },
+            {
+                "displayName": "Popular modules",
+                "fileName": "popular-node-js-modules"
+            }
+        ]
+    },
+    {
+        "title": "Asynchronous Programming",
+        "subTitles": [
+            {
+                "displayName": "Event-driven architecture",
+                "fileName": "event-driven-architecture"
+            },
+            {
+                "displayName": "Callbacks",
+                "fileName": "callbacks"
+            },
+            {
+                "displayName": "Promises",
+                "fileName": "promises"
+            },
+            {
+                "displayName": "Async/await",
+                "fileName": "async-await"
+            },
+            {
+                "displayName": "Avoiding blocking code",
+                "fileName": "avoiding-blocking-code"
+            }
+        ]
+    },
+    {
+        "title": "Handling HTTP Requests",
+        "subTitles": [
+            {
+                "displayName": "Creating an HTTP server",
+                "fileName": "creating-http-server"
+            },
+            {
+                "displayName": "Handling GET requests",
+                "fileName": "handling-get-requests"
+            },
+            {
+                "displayName": "Handling POST requests",
+                "fileName": "handling-post-requests"
+            },
+            {
+                "displayName": "Sending responses with different content types",
+                "fileName": "sending-responses"
+            }
+        ]
+    },
+    {
+        "title": "Working with Databases",
+        "subTitles": [
+            {
+                "displayName": "Introduction to databases",
+                "fileName": "introduction-to-databases"
+            },
+            {
+                "displayName": "Connecting to a database",
+                "fileName": "connecting-to-database"
+            },
+            {
+                "displayName": "Querying and modifying data",
+                "fileName": "querying-and-modifying-data"
+            },
+            {
+                "displayName": "Relational databases",
+                "fileName": "relational-databases"
+            },
+            {
+                "displayName": "NoSQL databases",
+                "fileName": "nosql-databases"
+            }
+        ]
+    },
+    {
+        "title": "Testing and Debugging",
+        "subTitles": [
+            {
+                "displayName": "Introduction to testing",
+                "fileName": "testing-intro"
+            },
+            {
+                "displayName": "Types of testing",
+                "fileName": "testing-types"
+            },
+            {
+                "displayName": "Unit testing with Mocha",
+                "fileName": "unit-testing-mocha"
+            },
+            {
+                "displayName": "Integration testing with SuperTest",
+                "fileName": "integration-testing-supertest"
+            },
+            {
+                "displayName": "Debugging techniques",
+                "fileName": "debugging-techniques"
+            }
+        ]
+    },
+    {
+        "title": "Deployment",
+        "subTitles": [
+            {
+                "displayName": "Preparing for deployment",
+                "fileName": "preparing-for-deployment"
+            },
+            {
+                "displayName": "Security considerations",
+                "fileName": "security-considerations"
+            },
+            {
+                "displayName": "Scaling Node.js applications",
+                "fileName": "scaling-nodejs"
+            },
+            {
+                "displayName": "Hosting options",
+                "fileName": "hosting-options"
+            },
+            {
+                "displayName": "Deploying with Docker",
+                "fileName": "deploying-with-docker"
+            }
+        ]
+    }
+]

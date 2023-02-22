@@ -1,0 +1,78 @@
+<div>
+    <h2>Control flow and functions</h2>
+    <p>Control flow statements in Swift allow you to make decisions and repeat code based on certain conditions. Here
+        are some of the basic control flow statements in Swift:</p>
+    <ul>
+        <li><strong>If statement:</strong> Executes a block of code if a certain condition is true.</li>
+        <li><strong>For loop:</strong> Repeats a block of code a certain number of times.</li>
+        <li><strong>While loop:</strong> Repeats a block of code as long as a certain condition is true.</li>
+        <li><strong>Switch statement:</strong> Executes different blocks of code based on the value of a certain
+            variable or expression.</li>
+    </ul>
+    <p>Here's an example of an if statement in Swift:</p>
+    <pre>
+        <code>
+            let number = 42
+            if number > 0 {
+                print("The number is positive")
+            } else if number < 0 {
+                print("The number is negative")
+            } else {
+                print("The number is zero")
+            }
+        </code>
+    </pre>
+    <p>Functions in Swift are reusable blocks of code that can be called from other parts of your program. Here's an
+        example of a simple function in Swift:</p>
+    <pre>
+        <code>
+            func sayHello() {
+                print("Hello, world!")
+            }
+
+            // Call the function
+            sayHello()
+        </code>
+    </pre>
+    <p>Functions can also take parameters and return values. Here's an example of a function that takes two parameters
+        and returns their sum:</p>
+    <pre>
+        <code>
+            func addNumbers(_ a: Int, _ b: Int) -> Int {
+                return a + b
+            }
+
+            // Call the function
+            let sum = addNumbers(3, 4)
+            print("The sum is \(sum)")
+        </code>
+    </pre>
+    <p>Swift also supports closures, which are anonymous functions that can be passed around and used in your code.
+        Here's an example of a closure that adds two numbers:</p>
+    <pre>
+        <code>
+            let addClosure = { (a: Int, b: Int) -> Int in
+                return a + b
+            }
+
+            // Call the closure
+            let result = addClosure(3, 4)
+            print("The result is \(result)")
+        </code>
+    </pre>
+    <p>Closures and functions are similar in that they are both blocks of code that can be called from other parts of a
+        program. However, there are some important differences between the two:</p>
+    <ol>
+        <li><strong>Syntax:</strong> Closures have a more compact syntax than functions. A closure is defined using
+            braces {} instead of the func keyword, and its parameters and return type are defined using an arrow ->.
+        </li>
+        <li><strong>Capturing values:</strong> Closures can capture and store references to any constants and variables
+            from the surrounding context in which they are defined. This means that they can access and modify those
+            values even if they are defined outside the closure's scope. Functions, on the other hand, can only access
+            and modify values that are passed to them as parameters or are defined within their own scope.</li>
+        <li><strong>Passing around:</strong> Closures can be passed around and used as arguments to other functions,
+            just like any other variable. This makes them a powerful tool for functional programming and for
+            implementing features like callbacks and completion handlers. Functions can also be passed around as
+            arguments, but they must be defined and named before they can be passed.</li>
+    </ol>
+</div>

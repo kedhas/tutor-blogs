@@ -4,3 +4,10 @@
     width: 13em;
     margin: 2px;
 }
+
+.btn-right {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    margin-left: 200px;
+}

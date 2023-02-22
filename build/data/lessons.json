@@ -35,7 +35,7 @@
             {
                 "title": "NodeJs",
                 "image": "images/node-js.png",
-                "route": "node-js/coming-soon"
+                "route": "node-js"
             }
         ]
     },
@@ -66,6 +66,11 @@
                 "title": "Flutter",
                 "image": "images/flutter.png",
                 "route": "flutter/coming-soon"
+            },
+            {
+                "title": "iOS Native",
+                "image": "images/ios-native.png",
+                "route": "ios-native"
             }
         ]
     }
