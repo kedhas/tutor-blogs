@@ -1,0 +1,33 @@
+<div>
+    <p>Routing is the process of navigating between different screens or views in an iOS app. In Swift, there are
+        several ways to handle routing, including using storyboards, programmatic routing, or a combination of both.</p>
+    <p>Here's an example of how you might use programmatic routing in Swift:</p>
+    <pre><code>// Create a new view controller
+    let viewController = MyViewController()
+  
+    // Set up the navigation controller
+    let navigationController = UINavigationController(rootViewController: viewController)
+  
+    // Present the navigation controller
+    self.present(navigationController, animated: true, completion: nil)
+    </code></pre>
+    <p>In this example, we create a new view controller called "MyViewController". We then set up a navigation
+        controller with "MyViewController" as the root view controller. Finally, we present the navigation controller to
+        the user.</p>
+    <p>Programmatic routing gives you more control over the navigation flow of your app and can be a good choice for
+        more complex apps. However, for simpler apps, storyboards can be a quick and easy way to handle routing. </p>
+    <p>Here's an example of how you might use storyboards to handle routing in Swift:</p>
+    <pre><code>// Get a reference to the storyboard
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+  
+    // Get a reference to the view controller you want to present
+    let viewController = storyboard.instantiateViewController(withIdentifier: "MyViewController")
+  
+    // Present the view controller
+    self.present(viewController, animated: true, completion: nil)
+    </code></pre>
+    <p>In this example, we get a reference to the "Main" storyboard and then use it to instantiate a new view controller
+        with the identifier "MyViewController". We then present the view controller to the user.</p>
+    <p>Overall, Swift provides several options for handling routing in your iOS app, allowing you to choose the approach
+        that works best for your app and your development style.</p>
+</div>

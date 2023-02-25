@@ -1,0 +1,86 @@
+<div>
+    <h2>Common State Management Techniques</h2>
+    <p>There are several common techniques for managing application state in iOS development. The choice of technique
+        depends on the specific requirements of your application and the complexity of the state you need to manage.</p>
+
+    <h3>Local State</h3>
+    <p>Local state is state that is managed within a single view or view controller. This can be useful for managing
+        simple UI state that doesn't need to be shared across the application. Examples of local state include:</p>
+    <ul>
+        <li>The text of a label or button</li>
+        <li>The state of a switch or checkbox</li>
+        <li>The value of a slider or stepper</li>
+    </ul>
+
+    <h4>Example: Local State in Swift</h4>
+    <p>Here's an example of using local state to manage the text of a label in Swift:</p>
+    <pre><code class="language-swift">
+    class MyViewController: UIViewController {
+        var labelText: String = "Hello, World!"
+        
+        @IBOutlet weak var myLabel: UILabel!
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            myLabel.text = labelText
+        }
+    }
+    </code></pre>
+
+    <p>In this example, we're using local state to manage the text of a `UILabel`. The `labelText` property is set to a
+        default value of "Hello, World!", and this value is used to set the text of the label in the `viewDidLoad`
+        method. This allows us to manage simple UI state in a clear and concise way.</p>
+
+    <h3>Shared State</h3>
+    <p>Shared state is state that is managed across multiple views or view controllers. This can be useful for managing
+        complex state that needs to be shared across the application. Examples of shared state include:</p>
+    <ul>
+        <li>The current user</li>
+        <li>The contents of a shopping cart</li>
+        <li>The state of a navigation bar or toolbar</li>
+    </ul>
+
+    <h4>Example: Shared State in Swift</h4>
+    <p>Here's an example of using shared state to manage the contents of a shopping cart in Swift:</p>
+    <pre><code class="language-swift">
+    class ShoppingCart {
+        static let shared = ShoppingCart()
+        
+        var items: [Product] = []
+    }
+    
+    class ProductListViewController: UIViewController {
+        @IBAction func addToCartButtonTapped(_ sender: UIButton) {
+            let product = // create new product
+            ShoppingCart.shared.items.append(product)
+        }
+    }
+    
+    class ShoppingCartViewController: UIViewController {
+        @IBOutlet weak var tableView: UITableView!
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            tableView.dataSource = self
+        }
+    }
+    
+    extension ShoppingCartViewController: UITableViewDataSource {
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return ShoppingCart.shared.items.count
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = // dequeue or create new cell
+            let product = ShoppingCart.shared.items[indexPath.row]
+            // configure cell with product details
+            return cell
+        }
+    }
+    </code></pre>
+
+    <p>In this example, we're using shared state to manage the contents of a shopping cart across multiple view
+        controllers. The `ShoppingCart` class is a singleton that contains a list</p>
+</div>ß

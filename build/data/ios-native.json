@@ -34,7 +34,7 @@
         ]
     },
     {
-        "title": "User interface design",
+        "title": "User interface",
         "subTitles": [
             {
                 "displayName": "Ways to creating UI",
@@ -47,6 +47,35 @@
             {
                 "displayName": "Auto Layout",
                 "fileName": "ios-auto-layout"
+            },
+            {
+                "displayName": "Routing",
+                "fileName": "ios-routing"
+            }
+        ]
+    },
+    {
+        "title": "State management",
+        "subTitles": [
+            {
+                "displayName": "Introduction",
+                "fileName": "ios-intro-to-state-management"
+            },
+            {
+                "displayName": "Common techniques",
+                "fileName": "ios-common-state-management-techniques"
+            },
+            {
+                "displayName": "@State",
+                "fileName": "ios-at-state"
+            },
+            {
+                "displayName": "Frameworks",
+                "fileName": "ios-state-management-frameworks"
+            },
+            {
+                "displayName": "Best practices",
+                "fileName": "ios-state-management-best-practices"
             }
         ]
     },
@@ -103,23 +132,6 @@
             {
                 "displayName": "Submitting an app to the App Store",
                 "fileName": "ios-submit-app"
-            }
-        ]
-    },
-    {
-        "title": "Best practices",
-        "subTitles": [
-            {
-                "displayName": "Clean code and maintainability",
-                "fileName": "ios-clean-code-maintainability"
-            },
-            {
-                "displayName": "Source control with Git",
-                "fileName": "ios-source-control-git"
-            },
-            {
-                "displayName": "Writing unit tests",
-                "fileName": "ios-unit-testing"
             }
         ]
     }

@@ -1,0 +1,47 @@
+<div>
+    <p>Core Data is a framework provided by Apple that allows developers to store data in their applications. It
+        provides a way to manage data using object graphs and can handle complex data structures and relationships
+        between objects. Core Data can be used with a variety of data stores, including SQLite and XML.</p>
+    <p>Here's an example of how you might use Core Data to store and retrieve data:</p>
+    <pre><code>import CoreData
+  
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let context = appDelegate.persistentContainer.viewContext
+  
+    // Create a new entity
+    let entity = NSEntityDescription.entity(forEntityName: "Person", in: context)!
+    let person = NSManagedObject(entity: entity, insertInto: context)
+  
+    // Set the values for the entity
+    person.setValue("John", forKey: "name")
+    person.setValue(30, forKey: "age")
+  
+    // Save the entity to the data store
+    do {
+        try context.save()
+    } catch let error as NSError {
+        print("Could not save. \(error), \(error.userInfo)")
+    }
+  
+    // Fetch the data from the data store
+    let fetchRequest = NSFetchRequest&lt;NSManagedObject&gt;(entityName: "Person")
+  
+    do {
+        let people = try context.fetch(fetchRequest)
+        for person in people {
+            let name = person.value(forKey: "name") as! String
+            let age = person.value(forKey: "age") as! Int
+            print("Name: \(name), Age: \(age)")
+        }
+    } catch let error as NSError {
+        print("Could not fetch. \(error), \(error.userInfo)")
+    }
+    </code></pre>
+    <p>In this example, we use Core Data to store information about people. We create a new entity called "Person" and
+        set its name and age values. We then save the entity to the data store using the managed object context.</p>
+    <p>To retrieve the data, we use a fetch request to get all the "Person" entities from the data store. We then
+        iterate through the results and print out the name and age values for each person.</p>
+    <p>Core Data is a powerful and flexible framework that can be used to store and manage data in your Swift
+        applications. With its support for object graphs and complex data relationships, it is a great choice for many
+        types of applications.</p>
+</div>

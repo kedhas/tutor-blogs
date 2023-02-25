@@ -1,0 +1,27 @@
+<div>
+    <h1>@State</h1>
+    <p>In SwiftUI, <code>@State</code> is a property wrapper that is used to declare a mutable state property. When a
+        state property is changed, SwiftUI automatically updates the view to reflect the change.</p>
+    <p>For example, consider the following code snippet:</p>
+    <pre><code>struct ContentView: View {
+      @State var count = 0
+      
+      var body: some View {
+        VStack {
+          Text("Count: \(count)")
+          Button("Increment") {
+            count += 1
+          }
+        }
+      }
+    }
+    </code></pre>
+    <p>In this code, <code>@State</code> is used to declare a mutable state property called <code>count</code>. The
+        <code>count</code> variable is used to display the value of the counter in the text view, and is incremented
+        when the user taps the button.</p>
+    <p>When the <code>count</code> variable is modified, SwiftUI automatically updates the view to reflect the change.
+        This allows for a more reactive and declarative approach to building UIs, as the developer does not need to
+        manually update the view when the state changes.</p>
+    <p><code>@State</code> is just one of the many property wrappers available in SwiftUI, and is used extensively to
+        manage the state of the view.</p>
+</div>

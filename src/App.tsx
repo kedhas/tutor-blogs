@@ -4,7 +4,6 @@ import './App.css';
 import ContentPage from './views/ContentPage/ContentPage';
 import ComingSoon from './views/ComingSoon';
 import LandingPage from './views/LandingPage/LandingPage';
-// import Lesson from './views/LessonView';
 
 function App() {
   return (

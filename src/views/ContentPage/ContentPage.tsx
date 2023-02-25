@@ -18,7 +18,7 @@ import { SubTopic, Topic } from '../../models/Models';
 import ListItemButton from '@mui/material/ListItemButton';
 import { Button } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight, faHome } from "@fortawesome/free-solid-svg-icons";
 import DynamicHTML from "../../Components/DynamicHTML";
 
 const drawerWidth = 240;
@@ -159,7 +159,6 @@ function ContentComponent() {
     return (
       <div>
         <div ref={containerRef}>
-          <hr />
         </div>
         <div >
           <DynamicHTML course={heading || ''} topic={subHeading || 'index'} />
@@ -217,7 +216,7 @@ function ContentComponent() {
             >
               <MenuIcon />
             </IconButton>
-            <Button style={{ marginRight: '200px' }}>
+            <Button style={{ marginRight: '25px' }}>
               <Typography
                 component="h1"
                 variant="h6"
@@ -225,10 +224,10 @@ function ContentComponent() {
                 noWrap
                 sx={{ flexGrow: 1 }}
               >
-                <Link to={`/`}>Home</Link>
+                <Link to={`/`}><FontAwesomeIcon icon={faHome} /></Link>
               </Typography>
             </Button>
-            <Button style={{ marginRight: '50px' }} onClick={() => {
+            <Button style={{ marginRight: '5px' }} onClick={() => {
               focusOnContentTop();
               navigateLesson(false);
             }}>
@@ -241,7 +240,7 @@ function ContentComponent() {
               >
                 <Link to="#">
                   {!(activeSubTopicIndex === 0 && activeTopicIndex === 0) &&
-                    <><FontAwesomeIcon icon={faArrowLeft} /><span>&nbsp;&nbsp;Previous</span></>}
+                    <><FontAwesomeIcon icon={faArrowLeft} /><span></span></>}
                 </Link>
               </Typography>
             </Button>
@@ -258,7 +257,7 @@ function ContentComponent() {
               >
                 <Link to="#">
                   {!(activeSubTopicIndex === activeTopic?.subTitles?.length - 1 && activeTopicIndex === data.length - 1)
-                    && <><span>Next&nbsp;&nbsp;</span> <FontAwesomeIcon icon={faArrowRight} /></>}
+                    && <><span></span> <FontAwesomeIcon icon={faArrowRight} /></>}
                 </Link>
               </Typography>
             </Button>

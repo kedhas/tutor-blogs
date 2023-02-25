@@ -1,0 +1,38 @@
+<div>
+    <p>SQLite is a lightweight and fast database engine that is used by many applications to store data. It provides a
+        simple and efficient way to store and retrieve data, making it a popular choice for many developers.</p>
+    <p>In Swift, there are several libraries available for working with SQLite, including:</p>
+    <ul>
+        <li>SQLite.swift</li>
+        <li>GRDB.swift</li>
+        <li>FMDB.swift</li>
+    </ul>
+    <p>Here's an example of how you might use the SQLite.swift library to work with a SQLite database:</p>
+    <pre><code>import SQLite
+  
+    let db = try Connection("path/to/database.sqlite3")
+  
+    let users = Table("users")
+    let id = Expression&lt;Int64&gt;("id")
+    let name = Expression&lt;String&gt;("name")
+    let age = Expression&lt;Int&gt;("age")
+  
+    try db.run(users.create { t in
+        t.column(id, primaryKey: true)
+        t.column(name)
+        t.column(age)
+    })
+  
+    let insert = users.insert(name &lt;- "John", age &lt;- 30)
+    let rowid = try db.run(insert)
+  
+    for user in try db.prepare(users) {
+        print("id: \(user[id]), name: \(user[name]), age: \(user[age])")
+    }
+    </code></pre>
+    <p>In this example, we use the SQLite.swift library to create a new SQLite database and a "users" table. We then
+        insert a new row into the table and retrieve all the rows from the "users" table and print them out to the
+        console.</p>
+    <p>SQLite is a powerful and efficient database engine that can be used in many different types of applications. With
+        Swift, it's easy to work with SQLite using one of the many available libraries.</p>
+</div>

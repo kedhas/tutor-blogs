@@ -9,5 +9,10 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    margin-left: 200px;
+    margin-left: 10px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
